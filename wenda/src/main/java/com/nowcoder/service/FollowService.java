@@ -78,7 +78,7 @@ public class FollowService {
         String followeeKey = RedisKeyUtil.getFolloweeKey(userId, entityType);
         return getIdsFromSet(jedisAdapter.zrevrange(followeeKey, 0, count));
     }
-
+    //按照关注时间由最近开始
     public List<Integer> getFollowees(int userId, int entityType, int offset, int count) {
         String followeeKey = RedisKeyUtil.getFolloweeKey(userId, entityType);
         return getIdsFromSet(jedisAdapter.zrevrange(followeeKey, offset, offset+count));

@@ -93,7 +93,7 @@ public class SensitiveService implements InitializingBean {
         StringBuilder result = new StringBuilder();
 
         TrieNode tempNode = rootNode;
-        int begin = 0; // 回滚数
+        int begin = 0; // 根位置
         int position = 0; // 当前比较的位置
 
         while (position < text.length()) {

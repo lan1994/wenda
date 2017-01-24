@@ -7,13 +7,14 @@ import java.util.Date;
  */
 public class Comment {
     private int id;
-    private int userId;
-    private int entityId;
-    private int entityType;
+    private int userId;     //谁评论的
+    private int entityId;  //questionId,commentId
+    private int entityType;//question ,comment
     private String content;
     private Date createdDate;
     private int status;
-
+    //private int toUserId //评论了谁
+    //private int conversitinId userxiao_userda规则，为了能显示出会话
     public int getId() {
         return id;
     }

@@ -91,6 +91,7 @@ public class FeedHandler implements EventHandler {
 
     @Override
     public List<EventType> getSupportEventTypes() {
-        return Arrays.asList(new EventType[]{EventType.COMMENT, EventType.FOLLOW});
+        return Arrays.asList(new EventType[]{EventType.COMMENT, EventType.FOLLOW,EventType.ADD_QUESTION});
+    	   //  return Arrays.asList(EventType.COMMENT, EventType.FOLLOW,EventType.ADD_QUESTION);
     }
 }

@@ -11,6 +11,11 @@ import java.util.Map;
  * Created by nowcoder on 2016/7/3.
  */
 public class WendaUtil {
+	public static void main(String[] args) {
+		System.out.println(WendaUtil.getJSONString(2));
+		System.out.println(WendaUtil.getJSONString(2,"s"));
+		
+	}
     private static final Logger logger = LoggerFactory.getLogger(WendaUtil.class);
 
     public static int ANONYMOUS_USERID = 3;

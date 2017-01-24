@@ -7,8 +7,6 @@ import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.client.solrj.response.UpdateResponse;
 import org.apache.solr.common.SolrInputDocument;
 import org.springframework.stereotype.Service;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistration;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -18,7 +16,7 @@ import java.util.Map;
  */
 @Service
 public class SearchService {
-    private static final String SOLR_URL = "http://127.0.0.1:8983/solr/wenda";
+    private static final String SOLR_URL = "http://127.0.0.1:8983/solr/nowcoder";
     private HttpSolrClient client = new HttpSolrClient.Builder(SOLR_URL).build();
     private static final String QUESTION_TITLE_FIELD = "question_title";
     private static final String QUESTION_CONTENT_FIELD = "question_content";
